@@ -14,7 +14,7 @@ const postSchema = new Schema(
       minlength: 1,
       maxlength: 400,
     },
-    authorUsername: {
+    username: {
       type: String,
       required: true,
     },

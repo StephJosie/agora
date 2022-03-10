@@ -5,6 +5,7 @@ import SidebarTop from '../../components/SidebarTop/SidebarTop'
 import Container from "react-bootstrap/Container"
 import Col from 'react-bootstrap/Col'
 import Row from "react-bootstrap/Row"
+import Post from "../../components/Post/Post"
 
 export default function CreatePost() {
     return (
@@ -18,6 +19,9 @@ export default function CreatePost() {
                     </Col>
                     <Col>
                         <Dashboard />
+                    </Col>
+                    <Col>
+                        <Post />
                     </Col>
                 </Row>
 

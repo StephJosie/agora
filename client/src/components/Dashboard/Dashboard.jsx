@@ -4,6 +4,7 @@ import "./Dashboard.css"
 import Card from "react-bootstrap/Card"
 import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
+import PostForm from '../PostForm/PostForm'
 // import { useMutation } from '@apollo/client'
 // import { ADD_NEW_POST } from '../../GraphQl/Mutations'
 
@@ -45,14 +46,8 @@ export default function Dashboard() {
 
                 </Card.Header>
                 <Card.Body>
+                    <PostForm />
 
-                    <Form >
-                        <Card.Title>Post Title</Card.Title>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Start adding to your community</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
-                        </Form.Group>
-                    </Form>
                 </Card.Body>
                 <Card.Footer className="d-flex justify-content-end"> <Button type="submit" variant="primary">Post</Button></Card.Footer>
             </Card>
